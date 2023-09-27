@@ -12,6 +12,11 @@
 		4B3CA0D02AC4A87800D155C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3CA0CF2AC4A87800D155C0 /* Assets.xcassets */; };
 		4B3CA0D32AC4A87800D155C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3CA0D22AC4A87800D155C0 /* Preview Assets.xcassets */; };
 		4B3CA0DF2AC4AE5A00D155C0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0DE2AC4AE5A00D155C0 /* Color.swift */; };
+		4B3CA0E52AC4DF0F00D155C0 /* DaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0E42AC4DF0F00D155C0 /* DaysView.swift */; };
+		4B3CA0E82AC4E08000D155C0 /* CalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0E72AC4E08000D155C0 /* CalendarItem.swift */; };
+		4B3CA0EA2AC4E12200D155C0 /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0E92AC4E12200D155C0 /* Mentor.swift */; };
+		4B3CA0EC2AC4E19400D155C0 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0EB2AC4E19400D155C0 /* Student.swift */; };
+		4B3CA0EE2AC4E42C00D155C0 /* DaysTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0ED2AC4E42C00D155C0 /* DaysTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		4B3CA0CF2AC4A87800D155C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B3CA0D22AC4A87800D155C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B3CA0DE2AC4AE5A00D155C0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4B3CA0E42AC4DF0F00D155C0 /* DaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysView.swift; sourceTree = "<group>"; };
+		4B3CA0E72AC4E08000D155C0 /* CalendarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarItem.swift; sourceTree = "<group>"; };
+		4B3CA0E92AC4E12200D155C0 /* Mentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentor.swift; sourceTree = "<group>"; };
+		4B3CA0EB2AC4E19400D155C0 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		4B3CA0ED2AC4E42C00D155C0 /* DaysTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			children = (
 				4B3CA0D92AC4ACD500D155C0 /* App */,
 				4B3CA0DA2AC4ACDE00D155C0 /* Core */,
+				4B3CA0E62AC4E06E00D155C0 /* Model */,
 				4B3CA0DB2AC4ACEC00D155C0 /* Extensions */,
 				4B3CA0CF2AC4A87800D155C0 /* Assets.xcassets */,
 				4B3CA0D12AC4A87800D155C0 /* Preview Content */,
@@ -97,9 +108,37 @@
 		4B3CA0DC2AC4ACFA00D155C0 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				4B3CA0CD2AC4A87600D155C0 /* ContentView.swift */,
+				4B3CA0E22AC4DEDC00D155C0 /* Components */,
+				4B3CA0E32AC4DEEE00D155C0 /* View */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		4B3CA0E22AC4DEDC00D155C0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CA0E42AC4DF0F00D155C0 /* DaysView.swift */,
+				4B3CA0ED2AC4E42C00D155C0 /* DaysTitle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4B3CA0E32AC4DEEE00D155C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CA0CD2AC4A87600D155C0 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B3CA0E62AC4E06E00D155C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CA0E72AC4E08000D155C0 /* CalendarItem.swift */,
+				4B3CA0E92AC4E12200D155C0 /* Mentor.swift */,
+				4B3CA0EB2AC4E19400D155C0 /* Student.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +212,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B3CA0CE2AC4A87600D155C0 /* ContentView.swift in Sources */,
+				4B3CA0EE2AC4E42C00D155C0 /* DaysTitle.swift in Sources */,
+				4B3CA0EA2AC4E12200D155C0 /* Mentor.swift in Sources */,
+				4B3CA0E52AC4DF0F00D155C0 /* DaysView.swift in Sources */,
 				4B3CA0CC2AC4A87600D155C0 /* ExpertsUIApp.swift in Sources */,
 				4B3CA0DF2AC4AE5A00D155C0 /* Color.swift in Sources */,
+				4B3CA0EC2AC4E19400D155C0 /* Student.swift in Sources */,
+				4B3CA0E82AC4E08000D155C0 /* CalendarItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
