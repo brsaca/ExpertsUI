@@ -106,7 +106,7 @@ struct ContentView: View {
                             
                             Spacer()
                             
-                            Text("September")
+                            Text("March")
                                 .font(.title2)
                                 .fontWeight(.medium)
                         }
