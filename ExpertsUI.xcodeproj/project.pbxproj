@@ -17,6 +17,9 @@
 		4B3CA0EA2AC4E12200D155C0 /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0E92AC4E12200D155C0 /* Mentor.swift */; };
 		4B3CA0EC2AC4E19400D155C0 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0EB2AC4E19400D155C0 /* Student.swift */; };
 		4B3CA0EE2AC4E42C00D155C0 /* DaysTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0ED2AC4E42C00D155C0 /* DaysTitle.swift */; };
+		4B3CA0F22AC4F13B00D155C0 /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0F12AC4F13B00D155C0 /* DayDetailView.swift */; };
+		4B3CA0F42AC4F1F600D155C0 /* DaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0F32AC4F1F600D155C0 /* DaySchedule.swift */; };
+		4B3CA0F62AC4F26300D155C0 /* DayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0F52AC4F26300D155C0 /* DayTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		4B3CA0E92AC4E12200D155C0 /* Mentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentor.swift; sourceTree = "<group>"; };
 		4B3CA0EB2AC4E19400D155C0 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		4B3CA0ED2AC4E42C00D155C0 /* DaysTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTitle.swift; sourceTree = "<group>"; };
+		4B3CA0F12AC4F13B00D155C0 /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailView.swift; sourceTree = "<group>"; };
+		4B3CA0F32AC4F1F600D155C0 /* DaySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedule.swift; sourceTree = "<group>"; };
+		4B3CA0F52AC4F26300D155C0 /* DayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +98,8 @@
 		4B3CA0DA2AC4ACDE00D155C0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4B3CA0DC2AC4ACFA00D155C0 /* Root */,
+				4B3CA0EF2AC4F0E700D155C0 /* DayDetail */,
+				4B3CA0DC2AC4ACFA00D155C0 /* Calendar */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -105,13 +112,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		4B3CA0DC2AC4ACFA00D155C0 /* Root */ = {
+		4B3CA0DC2AC4ACFA00D155C0 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
 				4B3CA0E22AC4DEDC00D155C0 /* Components */,
 				4B3CA0E32AC4DEEE00D155C0 /* View */,
 			);
-			path = Root;
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		4B3CA0E22AC4DEDC00D155C0 /* Components */ = {
@@ -137,8 +144,26 @@
 				4B3CA0E72AC4E08000D155C0 /* CalendarItem.swift */,
 				4B3CA0E92AC4E12200D155C0 /* Mentor.swift */,
 				4B3CA0EB2AC4E19400D155C0 /* Student.swift */,
+				4B3CA0F32AC4F1F600D155C0 /* DaySchedule.swift */,
+				4B3CA0F52AC4F26300D155C0 /* DayTime.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4B3CA0EF2AC4F0E700D155C0 /* DayDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CA0F02AC4F12000D155C0 /* View */,
+			);
+			path = DayDetail;
+			sourceTree = "<group>";
+		};
+		4B3CA0F02AC4F12000D155C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CA0F12AC4F13B00D155C0 /* DayDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,10 +236,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3CA0F22AC4F13B00D155C0 /* DayDetailView.swift in Sources */,
 				4B3CA0CE2AC4A87600D155C0 /* ContentView.swift in Sources */,
+				4B3CA0F62AC4F26300D155C0 /* DayTime.swift in Sources */,
 				4B3CA0EE2AC4E42C00D155C0 /* DaysTitle.swift in Sources */,
 				4B3CA0EA2AC4E12200D155C0 /* Mentor.swift in Sources */,
 				4B3CA0E52AC4DF0F00D155C0 /* DaysView.swift in Sources */,
+				4B3CA0F42AC4F1F600D155C0 /* DaySchedule.swift in Sources */,
 				4B3CA0CC2AC4A87600D155C0 /* ExpertsUIApp.swift in Sources */,
 				4B3CA0DF2AC4AE5A00D155C0 /* Color.swift in Sources */,
 				4B3CA0EC2AC4E19400D155C0 /* Student.swift in Sources */,
