@@ -10,10 +10,10 @@ import SwiftUI
 struct DayDetailView: View {
     // MARK: View Properties
     let schedule: DaySchedule
-    
     let rows = [
         GridItem(.fixed(10)), GridItem(.fixed(UIScreen.main.bounds.width - 20)), GridItem(.fixed(10))
     ]
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ScrollView (.vertical, showsIndicators: false) {
@@ -24,6 +24,9 @@ struct DayDetailView: View {
                         .resizable()
                         .frame(width: 50, height: 50)
                         .foregroundStyle(.black, Color.buttonBkg)
+                        .onTapGesture {
+                            dismiss()
+                        }
                     
                     Spacer()
                     
