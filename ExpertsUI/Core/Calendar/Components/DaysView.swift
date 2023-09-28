@@ -12,7 +12,7 @@ struct DaysView: View {
     
     var body: some View {
         ZStack {
-            if let mentor = item.mentor {
+            if let mentor = item.schedule?.mentor {
                 Image(mentor.image)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -26,19 +26,19 @@ struct DaysView: View {
             Text(item.text)
                 .font(.subheadline)
                 .fontWeight(.semibold)
-                .foregroundColor(item.mentor != nil ? .white : .black)
+                .foregroundColor(item.schedule?.mentor != nil ? .white : .black)
         }
     }
 }
 
 struct DayWithMentor_Previews: PreviewProvider {
     static var previews: some View {
-        DaysView(item: CalendarItem(itemType: .day, text: "1", mentor: Mentor.MOCK_MENTORS[0]))
+        DaysView(item: CalendarItem(itemType: .day, text: "1", schedule: DaySchedule.MOCK_SCHEDULE[0]))
     }
 }
 
 struct DayWithoutMentor_Previews: PreviewProvider {
     static var previews: some View {
-        DaysView(item: CalendarItem(itemType: .day, text: "4", mentor:nil))
+        DaysView(item: CalendarItem(itemType: .day, text: "4", schedule: nil))
     }
 }
