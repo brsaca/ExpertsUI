@@ -8,21 +8,33 @@
 import SwiftUI
 
 struct MentorStatsView: View {
-    
+    // MARK: View Properties
     let mentor: Mentor
+    let colors: [Color] = [.red, .blue, .purple]
     
     var body: some View {
         HStack(spacing:2) {
             // MARK:  students
-            HStack {
-                ForEach(mentor.students, id: \.id) { student in
-                    Image(student.image)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 40, height: 40)
-                        .clipShape(Circle())
+            ZStack {
+                ForEach(0..<mentor.students.count, id: \.self) { i in
+                    ZStack(alignment: .leading) {
+                        HStack(spacing: 0) {
+                            Color.clear
+                                .frame(width: CGFloat(i) * 70, height: 44)
+                            Image(mentor.students[i].image)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 44, height: 44)
+                            .clipShape(Circle())
+                            .overlay(
+                                    RoundedRectangle(cornerRadius: 22)
+                                        .stroke(.clear, lineWidth: 4)
+                                )
+                        }
+                    }
                 }
             }
+            .frame(width: 50)
             
             Spacer()
             

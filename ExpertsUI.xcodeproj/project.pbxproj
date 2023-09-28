@@ -23,6 +23,7 @@
 		4B74B0CD2AC51BEF0026B5B8 /* MentorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B0CC2AC51BEF0026B5B8 /* MentorView.swift */; };
 		4B74B0CF2AC524B70026B5B8 /* MentorStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B0CE2AC524B70026B5B8 /* MentorStatsView.swift */; };
 		4B74B0D12AC527E40026B5B8 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B0D02AC527E40026B5B8 /* StatsView.swift */; };
+		4BA03D332AC5D4B9001850CA /* DayTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA03D322AC5D4B9001850CA /* DayTimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		4B74B0CC2AC51BEF0026B5B8 /* MentorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorView.swift; sourceTree = "<group>"; };
 		4B74B0CE2AC524B70026B5B8 /* MentorStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorStatsView.swift; sourceTree = "<group>"; };
 		4B74B0D02AC527E40026B5B8 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		4BA03D322AC5D4B9001850CA /* DayTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				4B74B0CC2AC51BEF0026B5B8 /* MentorView.swift */,
 				4B74B0CE2AC524B70026B5B8 /* MentorStatsView.swift */,
 				4B74B0D02AC527E40026B5B8 /* StatsView.swift */,
+				4BA03D322AC5D4B9001850CA /* DayTimeView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				4B3CA0CC2AC4A87600D155C0 /* ExpertsUIApp.swift in Sources */,
 				4B3CA0DF2AC4AE5A00D155C0 /* Color.swift in Sources */,
 				4B3CA0EC2AC4E19400D155C0 /* Student.swift in Sources */,
+				4BA03D332AC5D4B9001850CA /* DayTimeView.swift in Sources */,
 				4B74B0D12AC527E40026B5B8 /* StatsView.swift in Sources */,
 				4B3CA0E82AC4E08000D155C0 /* CalendarItem.swift in Sources */,
 			);

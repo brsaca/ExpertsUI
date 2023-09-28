@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DayDetailView: View {
-    
+    // MARK: View Properties
     let schedule: DaySchedule
     
     let rows = [
@@ -56,9 +56,12 @@ struct DayDetailView: View {
                 MentorStatsView(mentor: schedule.mentor)
                     .padding(.horizontal)
                 
-                Divider()
-                
-                // MARK: 
+                // MARK: Times
+                LazyVStack {
+                    ForEach(schedule.dayTime, id: \.id) { time in
+                        DayTimeView(time: time)
+                    }
+                }
             }
         }
         .padding(.top, 60)

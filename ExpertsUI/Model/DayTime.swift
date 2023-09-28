@@ -25,6 +25,7 @@ enum Category {
 }
 
 struct DayTime {
+    let id = UUID()
     let hour: String
     let time: String
     let category: Category
