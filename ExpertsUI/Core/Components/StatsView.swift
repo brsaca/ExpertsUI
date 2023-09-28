@@ -36,19 +36,10 @@ struct StatsView: View {
             }
         }
         .font(.system(size: 14))
-        .padding(.horizontal, 10)
-        .overlay {
-            Group {
-                if amount > 0 {
-                    Rectangle()
-                } else {
-                    Circle()
-                }
-            }
-            .frame(height: 40)
-            .cornerRadius(20)
-            .foregroundColor(.gray.opacity(0.2))
-        }
+        .padding(.horizontal, 15)
+        .padding(.vertical, 15)
+        .background(.gray.opacity(0.2))
+        .clipShape(Capsule())
     }
 }
 
