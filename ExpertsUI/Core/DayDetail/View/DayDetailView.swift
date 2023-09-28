@@ -23,7 +23,7 @@ struct DayDetailView: View {
                     Image(systemName: "chevron.left.circle.fill")
                         .resizable()
                         .frame(width: 50, height: 50)
-                        .foregroundStyle(.black, Color("buttonDayBar"))
+                        .foregroundStyle(.black, Color.buttonBkg)
                     
                     Spacer()
                     
@@ -37,10 +37,11 @@ struct DayDetailView: View {
                     Image(systemName: "ellipsis.circle.fill")
                         .resizable()
                         .frame(width: 50, height: 50)
-                        .foregroundStyle(.black, Color("buttonDayBar"))
+                        .foregroundStyle(.black, Color.buttonBkg)
                 }
                 .padding(.horizontal, 24)
                 
+                // MARK: MentorView
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack {
                         ForEach(DaySchedule.MOCK_SCHEDULE, id: \.id) { item in
@@ -50,6 +51,14 @@ struct DayDetailView: View {
                     //.scrollTargetLayout()
                 }
                 //.scrollTargetBehavior(.paging)
+                
+                // MARK: MentorStatsView
+                MentorStatsView(mentor: schedule.mentor)
+                    .padding(.horizontal)
+                
+                Divider()
+                
+                // MARK: 
             }
         }
         .padding(.top, 60)

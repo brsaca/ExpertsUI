@@ -36,6 +36,7 @@ struct MentorView: View {
             if size == .large {
                 Text(mentor.profesion)
                     .font(.footnote)
+                    .fontWeight(.semibold)
                     .foregroundColor(.gray)
                     .padding(.top, 10)
                     .padding(.bottom, 2)

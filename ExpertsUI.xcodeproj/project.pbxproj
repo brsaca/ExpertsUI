@@ -21,6 +21,8 @@
 		4B3CA0F42AC4F1F600D155C0 /* DaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0F32AC4F1F600D155C0 /* DaySchedule.swift */; };
 		4B3CA0F62AC4F26300D155C0 /* DayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CA0F52AC4F26300D155C0 /* DayTime.swift */; };
 		4B74B0CD2AC51BEF0026B5B8 /* MentorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B0CC2AC51BEF0026B5B8 /* MentorView.swift */; };
+		4B74B0CF2AC524B70026B5B8 /* MentorStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B0CE2AC524B70026B5B8 /* MentorStatsView.swift */; };
+		4B74B0D12AC527E40026B5B8 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B0D02AC527E40026B5B8 /* StatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		4B3CA0F32AC4F1F600D155C0 /* DaySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedule.swift; sourceTree = "<group>"; };
 		4B3CA0F52AC4F26300D155C0 /* DayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTime.swift; sourceTree = "<group>"; };
 		4B74B0CC2AC51BEF0026B5B8 /* MentorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorView.swift; sourceTree = "<group>"; };
+		4B74B0CE2AC524B70026B5B8 /* MentorStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorStatsView.swift; sourceTree = "<group>"; };
+		4B74B0D02AC527E40026B5B8 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				4B74B0CC2AC51BEF0026B5B8 /* MentorView.swift */,
+				4B74B0CE2AC524B70026B5B8 /* MentorStatsView.swift */,
+				4B74B0D02AC527E40026B5B8 /* StatsView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 				4B3CA0CE2AC4A87600D155C0 /* ContentView.swift in Sources */,
 				4B3CA0F62AC4F26300D155C0 /* DayTime.swift in Sources */,
 				4B74B0CD2AC51BEF0026B5B8 /* MentorView.swift in Sources */,
+				4B74B0CF2AC524B70026B5B8 /* MentorStatsView.swift in Sources */,
 				4B3CA0EE2AC4E42C00D155C0 /* DaysTitle.swift in Sources */,
 				4B3CA0EA2AC4E12200D155C0 /* Mentor.swift in Sources */,
 				4B3CA0E52AC4DF0F00D155C0 /* DaysView.swift in Sources */,
@@ -258,6 +265,7 @@
 				4B3CA0CC2AC4A87600D155C0 /* ExpertsUIApp.swift in Sources */,
 				4B3CA0DF2AC4AE5A00D155C0 /* Color.swift in Sources */,
 				4B3CA0EC2AC4E19400D155C0 /* Student.swift in Sources */,
+				4B74B0D12AC527E40026B5B8 /* StatsView.swift in Sources */,
 				4B3CA0E82AC4E08000D155C0 /* CalendarItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
