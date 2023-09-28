@@ -3,7 +3,7 @@
 Design App on SwiftUI from Dribbble [Experts App](https://dribbble.com/shots/20962932-Timing)
 <p align="center">
 <a href="#">
-<!--<img src="images/" align="center" width=35%> -->
+<img src="images/figmaToSwiftuiExperts.gif" align="center" width=50%> 
 </a> 
 <br><br>
      Experts App design with SwiftUI
@@ -15,7 +15,7 @@ Design App on SwiftUI from Dribbble [Experts App](https://dribbble.com/shots/209
     <img alt="swiftUI" src="https://img.shields.io/badge/SwiftUI-16.4-blue.svg" />
   </a>
   <a href="#">
-    <img alt="status" src="https://img.shields.io/badge/status-inprogress-yellow.svg" />
+    <img alt="status" src="https://img.shields.io/badge/status-finish-green.svg" />
   </a>
   <br>
     <br>
@@ -28,6 +28,8 @@ Design App on SwiftUI from Dribbble [Experts App](https://dribbble.com/shots/209
 Develop an app from a dribbble design in SwiftUI
 
 ## 💻 TODO
+- Add border in students view
+- Change info when the mentors scrolls
 
 
 ## 👤 Author
